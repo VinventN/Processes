@@ -120,5 +120,3 @@ def mtfnpp_plot(T=T, runs=5):
     plt.xlim(0,50)
     plt.ylim(ymin=0)
     plt.show()
-
-mtfnpp_plot()
