@@ -7,10 +7,6 @@ T = 50                  # run time
 
 alpha = 0.9             # fractional index
 
-# for risk processes
-u = 1000                # initial capital
-c = 20                  # incoming capital per unit time
-
 # for nonhomogeneous process
 # Weibull's model
 gamma = 0.9
@@ -86,5 +82,4 @@ def fnpp_plot(T=T, runs=5):
     plt.xlim(0,50)
     plt.ylim(ymin=0)
     plt.show()
-
-fnpp_plot()
+    

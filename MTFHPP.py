@@ -8,10 +8,6 @@ T = 50                  # run time
 alpha_1 = 0.9           # fractional index 1
 alpha_2 = 0.5           # fractional index 2
 
-# for risk processes
-u = 1000                # initial capital
-c = 20                  # incoming capital per unit time
-
 # for homogeneous process
 lambda_rate = 4         # Poisson rate
 
@@ -100,5 +96,3 @@ def mtfhpp_plot(T=T, runs=5):
     plt.xlim(0,T)
     plt.ylim(ymin=0)
     plt.show()
-
-mtfhpp_plot()

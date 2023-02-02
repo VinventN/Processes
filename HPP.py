@@ -5,21 +5,8 @@ import matplotlib.pyplot as plt
 
 T = 50                  # run time
 
-alpha = 0.9             # fractional index
-
-# for risk processes
-u = 1000                # initial capital
-c = 20                  # incoming capital per unit time
-
 # for homogeneous process
 lambda_rate = 4         # Poisson rate
-
-# stable subordinator
-def stable_subordinator():
-    np.random.seed()
-    U = np.random.random_sample(2)
-    S = np.sin(alpha * np.pi * U[0]) * (np.sin((1 - alpha) * np.pi * U[0]))**(1 / alpha - 1)/(np.sin(np.pi * U[0])**(1 / alpha) * abs(log(U[1]))**(1 / alpha - 1))
-    return S
 
 # HPP
 def hpp(T=T):
@@ -64,5 +51,3 @@ def hpp_plot(T=T, runs=5):
     plt.xlim(0,50)
     plt.ylim(ymin=0)
     plt.show()
-    
-hpp_plot()

@@ -2,14 +2,9 @@ import numpy as np
 from numpy import absolute as abs, log
 import matplotlib.pyplot as plt
 
-
 T = 50                  # run time
 
 alpha = 0.9             # fractional index
-
-# for risk processes
-u = 1000                # initial capital
-c = 20                  # incoming capital per unit time
 
 # for homogeneous process
 lambda_rate = 4         # Poisson rate
@@ -65,5 +60,3 @@ def fhpp_plot(T=T, runs=5):
     plt.xlim(0,50)
     plt.ylim(ymin=0)
     plt.show()
-
-fhpp_plot()
