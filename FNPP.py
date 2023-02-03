@@ -16,10 +16,6 @@ beta = 0.2
 def _lambda(t):
     return gamma/beta * (t/beta) ** (gamma-1)
 
-# integral of intensity function
-def integral_lambda(t):
-    return (t/beta)**c
-
 # max value of intensity function (to be used in thinning algorithm)
 def _lambda_bar():
     t_lambda_bar = optimize.fminbound(lambda t: -_lambda(t), 0, T)
